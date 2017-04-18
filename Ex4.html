@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            
+            function ex4(vetPal){
+                var ul = document.createElement("ul");
+                for(var i=0; i<vetPal.length;i++){
+                    var li = document.createElement("li");
+                    li.innerHTML = vetPal[i];
+                    ul.appendChild(li);
+                }
+                document.body.appendChild(ul);
+            }
+        
+            function teste4(){
+                ex4(["Ola ", "Mundo ", "JS"]);
+            }
+        
+            
+        </script>
+    </head>
+    <body>
+        <button onclick="teste4()">Click</button>
+    </body>
+</html>

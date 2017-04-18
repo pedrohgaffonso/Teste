@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            
+            function ex2(inp){
+                var d1 = document.getElementById("d1");
+                var aux = ""
+                for(var i=0; i<inp.value.length;i++){
+                    aux = inp.value[i] + aux;
+                }
+                d1.innerHTML = aux;
+            }
+        
+            
+        </script>
+    </head>
+    <body>
+        <br>
+        <input type="text" name="texto1" id="t1" oninput="ex2(this)"/>
+        <div id="d1"></div>
+    </body>
+</html>

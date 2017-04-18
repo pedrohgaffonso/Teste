@@ -1,0 +1,43 @@
+<!--
+        <button onclick="nomeFuncao('Texto', 532)">Chama func</button>
+        
+        function nomeFuncao(a, b) {
+            
+        }
+        
+        // adiciona alguem dentro de elemento
+        elemento.appendChild(elemento) 
+        
+        // adiciona quem, dentro de elemento antes do antesDeQuem
+        elemento.insertBefore(quem, antesDeQuem)
+        
+        // acessa a tag a qual o elemento está contido
+        elemento.parentNode()
+        
+        // acessa o primeiro elemento encontrado de acordo com o
+        // parâmetro de consulta
+        document.querySelector('.classe-do-elemento')
+        document.querySelector('#id-do-elemento')
+        document.querySelector('nome-da-tag')
+        Exemplo mais hard: document.querySelector('input[name=telefone]')
+        Exemplo mais hard: document.querySelector('input[type=text]')
+        
+        // Acessa TODOS os elementos encontrados com a consulta
+        document.querySelectorAll('consulta')
+        
+        // Acessa O PRIMEIRO elemento encontrado com o id
+        elemento = document.getElementById('id-do-elemento')
+        elemento.appendChild()
+        
+        // Acessa uma lista de elemntos com a classe procurada
+        elemento = document.getElementsByClassName('classe-dos-elementos)
+        elemento[0].appendChil()
+        
+        // Acessa uma lista de elemntos com o nome da tag procurada
+        elemento = document.getElementsByTagName('nome-da-tag')
+        elemento[0].appendChil()
+        
+        // atribui um novo elemento no lugar de um filho especifico
+        pai.replaceChild(quem, noLugarDeQuem);
+        
+    -->

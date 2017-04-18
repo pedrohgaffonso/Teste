@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //AVALIACAO
+            function montar(obj){
+               var div1 = document.createElement("div");
+               var div2 = document.createElement("div");
+               var div3 = document.createElement("div");
+               var div4 = document.createElement("div");
+               var div5 = document.createElement("div");
+               div1.innerHTML = obj.id;
+               div2.innerHTML = obj.estado;
+               div3.innerHTML = obj.pagador.pagamento;
+               div4.innerHTML = obj.pagador.status;
+               div5.innerHTML = obj.pagador.email;
+               div1.setAttribute("class","infoId");
+               div2.setAttribute("class","infoEstado");
+               div3.setAttribute("class","infoPgto");
+               div4.setAttribute("class","infoStatus");
+               div5.setAttribute("class","infoEmail");
+               div1.style.backgroundColor = "yellow";
+               document.body.appendChild(div1);
+               document.body.appendChild(div2);
+               document.body.appendChild(div3);
+               document.body.appendChild(div4);
+               document.body.appendChild(div5);
+            }
+        
+            function ex3(){
+                montar({  id:"I-1TJ3GAGG82Y9" 
+                        , estado:"Ativo"
+                        , description:"Pagamento mensal"
+                        , pagador : {pagamento:"CC", status:"N verificado", email:"a@b.com"}
+                });
+            }
+        </script>
+    </head>
+    <body>
+       <button onclick="ex3()">Montar</button>
+    </body>
+</html>
